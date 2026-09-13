@@ -74,8 +74,25 @@ Codegen opens a browser and records interactions. Copy or save the generated tes
 ## Project structure
 
 ```text
-tests/                 Playwright test files
-playwright.config.ts   Playwright configuration
-playwright-report/     HTML test report output
-test-results/          Test artifacts and traces
+.github/workflows/playwright.yml   GitHub Actions workflow for Playwright CI execution.
+.gitignore                          Ignores generated output and editor dependency folders.
+package.json                        Project metadata and Playwright test dependency declaration.
+package-lock.json                   Locked dependency versions for reproducible installs.
+playwright.config.ts                Playwright configuration and browser project definitions.
+README.md                           Parent project documentation and quick-start instructions.
+tests/                              Learning test chapters and examples.
+  01_Basics/                         Beginner Playwright examples and scenario files.
+  02_TestAnnotations/                Playwright test annotations and describe-style learning examples.
+```
+
+## File purpose
+
+```text
+.github/workflows/playwright.yml   Optional CI workflow that installs dependencies and runs Playwright tests.
+.gitignore                          Keeps generated folders, dependency folders, local artifacts, and editor files out of Git.
+package.json                        Declares the Playwright test package and version metadata.
+package-lock.json                   Records the dependency tree used by the project.
+playwright.config.ts                Sets the test directory, reporting mode, browser projects, and common Playwright options.
+tests/01_Basics/                   Contains basic Playwright learning examples such as browser context and page-flow samples.
+tests/02_TestAnnotations/          Contains annotation-focused Playwright examples such as describe-style test organization.
 ```
