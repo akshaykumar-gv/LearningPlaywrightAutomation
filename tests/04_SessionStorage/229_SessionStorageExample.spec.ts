@@ -10,6 +10,6 @@ test("Direct Dashboard", async ({ browser }) => {
     const context = await browser.newContext({storageState:'storageStage.json'})
     const page = await context.newPage();
 
-    await page.goto("https://test.movex.co.uk/motor-dealers/");
-    await expect(page.getByRole('heading')).toHaveText("Quotes Requested");
+    await page.goto("https://test.hello.com/dashboard");
+    await expect(page.getByRole('heading')).toHaveText("dashboard");
 })
