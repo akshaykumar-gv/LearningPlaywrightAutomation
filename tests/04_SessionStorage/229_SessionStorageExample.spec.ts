@@ -12,4 +12,5 @@ test("Direct Dashboard", async ({ browser }) => {
 
     await page.goto("https://test.hello.com/dashboard");
     await expect(page.getByRole('heading')).toHaveText("dashboard");
+    // await expect(page).toHaveTitle("/")
 })
