@@ -85,7 +85,7 @@ package-lock.json                 Locked dependency versions for reproducible in
 playwright.config.ts              Playwright configuration, browser projects, and Allure setup.
 storageStage.json                 Shared browser storage snapshot used by session-state examples.
 README.md                        Parent project documentation and quick-start instructions.
-tests/                           Learning chapters covering basics, annotations, locators, session storage, and reporting.
+tests/                           Learning chapters covering basics, annotations, locators, multiple elements, web tables, session storage, and reporting.
   01_Basics/
     220_BCP.spec.ts              Basic browser control and page interaction examples.
     221_BCP_More.spec.ts          Additional browser flow and interaction scenarios.
@@ -105,6 +105,12 @@ tests/                           Learning chapters covering basics, annotations,
     229_SessionStorageExample.spec.ts Reuse the stored session for dashboard-based assertions.
   05_AllureReporting/
     230_StorageStateExample.spec.ts Use storageState with Playwright and Allure reporting.
+  06_HandlingMultipleElements/
+    231_MEH.spec.ts              Multiple-element locator examples and interaction flows.
+    232_MEHGetAttribute.spec.ts  Examples for reading attributes from multiple matching elements.
+  07_WebTables/
+    233_HandlingWebTable.spec.ts Handling web-table lookup and dynamic row selection examples.
+    234_WebtablesTask.spec.ts    Task-based web-table interaction exercise.
 ```
 
 ## File purpose
@@ -123,4 +129,6 @@ tests/02_TestAnnotations/         Includes annotation-focused examples using tes
 tests/03_LocatorsAndCommands/     Includes locator strategies, page commands, and task-driven learning exercises.
 tests/04_SessionStorage/          Includes helpers that generate and reuse browser storage state for logged-in flows.
 tests/05_AllureReporting/         Includes reporting examples that validate stored-session flows with Allure.
+tests/06_HandlingMultipleElements/ Includes examples that work with collections of matching elements and attributes.
+tests/07_WebTables/              Includes web-table row selection, filtering, and task-driven table interaction examples.
 ```
