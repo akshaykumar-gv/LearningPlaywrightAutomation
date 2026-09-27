@@ -111,6 +111,9 @@ tests/                           Learning chapters covering basics, annotations,
   07_WebTables/
     233_HandlingWebTable.spec.ts Handling web-table lookup and dynamic row selection examples.
     234_WebtablesTask.spec.ts    Task-based web-table interaction exercise.
+    235_CssPsuedoClass.spec.ts   CSS pseudo-class examples for selecting rows and checkbox controls in a table.
+    236_WebTablePagination.spec.ts Pagination-based lookup across multiple web-table pages.
+    237_WebTablePaginationWithFunction.spec.ts Reusable helper function to find a paginated row and extract row data.
 ```
 
 ## File purpose
@@ -130,5 +133,8 @@ tests/03_LocatorsAndCommands/     Includes locator strategies, page commands, an
 tests/04_SessionStorage/          Includes helpers that generate and reuse browser storage state for logged-in flows.
 tests/05_AllureReporting/         Includes reporting examples that validate stored-session flows with Allure.
 tests/06_HandlingMultipleElements/ Includes examples that work with collections of matching elements and attributes.
-tests/07_WebTables/              Includes web-table row selection, filtering, and task-driven table interaction examples.
+tests/07_WebTables/              Includes web-table row selection, filtering, pagination, and task-driven table interaction examples.
+tests/07_WebTables/235_CssPsuedoClass.spec.ts  Demonstrates CSS pseudo-class selectors for a table row and its nested checkbox control.
+tests/07_WebTables/236_WebTablePagination.spec.ts  Locates a specific record across paginated table pages and prints its matching field values.
+tests/07_WebTables/237_WebTablePaginationWithFunction.spec.ts  Reuses a helper function to search paginated tables and collect row details such as email and country.
 ```
