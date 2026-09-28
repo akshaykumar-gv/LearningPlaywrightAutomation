@@ -114,6 +114,8 @@ tests/                           Learning chapters covering basics, annotations,
     235_CssPsuedoClass.spec.ts   CSS pseudo-class examples for selecting rows and checkbox controls in a table.
     236_WebTablePagination.spec.ts Pagination-based lookup across multiple web-table pages.
     237_WebTablePaginationWithFunction.spec.ts Reusable helper function to find a paginated row and extract row data.
+    238_Task26OrangeHr.spec.ts   OrangeHRM employee creation and deletion task covering web-table validation and pagination.
+    239_TaskSep26Flipkart.spec.ts Flipkart product search task that iterates multiple result pages and prints product names and prices.
 ```
 
 ## File purpose
@@ -137,4 +139,6 @@ tests/07_WebTables/              Includes web-table row selection, filtering, pa
 tests/07_WebTables/235_CssPsuedoClass.spec.ts  Demonstrates CSS pseudo-class selectors for a table row and its nested checkbox control.
 tests/07_WebTables/236_WebTablePagination.spec.ts  Locates a specific record across paginated table pages and prints its matching field values.
 tests/07_WebTables/237_WebTablePaginationWithFunction.spec.ts  Reuses a helper function to search paginated tables and collect row details such as email and country.
+tests/07_WebTables/238_Task26OrangeHr.spec.ts  Automates an OrangeHRM employee workflow with add, verify, delete, and pagination checks on the table.
+tests/07_WebTables/239_TaskSep26Flipkart.spec.ts  Searches Flipkart products across pages and logs the product names and prices from the listing grid.
 ```
