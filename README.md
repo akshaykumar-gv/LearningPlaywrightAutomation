@@ -85,7 +85,7 @@ package-lock.json                 Locked dependency versions for reproducible in
 playwright.config.ts              Playwright configuration, browser projects, and Allure setup.
 storageStage.json                 Shared browser storage snapshot used by session-state examples.
 README.md                        Parent project documentation and quick-start instructions.
-tests/                           Learning chapters covering basics, annotations, locators, multiple elements, web tables, session storage, and reporting.
+tests/                           Learning chapters covering basics, annotations, locators, dropdowns, frames, mouse/keyboard actions, JS alerts, multiple elements, web tables, session storage, and reporting.
   01_Basics/
     220_BCP.spec.ts              Basic browser control and page interaction examples.
     221_BCP_More.spec.ts          Additional browser flow and interaction scenarios.
@@ -116,6 +116,25 @@ tests/                           Learning chapters covering basics, annotations,
     237_WebTablePaginationWithFunction.spec.ts Reusable helper function to find a paginated row and extract row data.
     238_Task26OrangeHr.spec.ts   OrangeHRM employee creation and deletion task covering web-table validation and pagination.
     239_TaskSep26Flipkart.spec.ts Flipkart product search task that iterates multiple result pages and prints product names and prices.
+  08_Dropdowns/
+    240_SimpleDD.spec.ts         Simple dropdown selection scenarios using HTML select elements.
+    241_CustomDD.spec.ts          Custom dropdown interactions and click-based item selection.
+    242_CustomDDType.spec.ts      Type-ahead custom dropdown selection examples.
+  09_FramesIFrames/
+    245_HandlingIFrames.spec.ts   Examples for switching into and out of iframe contexts.
+    246_MultiFrame.spec.ts        Multi-frame navigation and interaction patterns.
+    247_NestedFrames.spec.ts      Nested frame handling across parent and child document contexts.
+    248_TaskSep29.spec.ts         Exercise covering iframe-based form interaction and validation.
+  10_MouseActionNKeyboard/
+    249_Keyboard.spec.ts          Keyboard event examples and key verification using page actions.
+    250_HoverTest.spec.ts         Hover and mouse-state examples for interactive controls.
+    251_DragnDrop.spec.ts         Simple drag-and-drop task examples.
+    252_AdvDragnDrop.spec.ts      Advanced drag-and-drop flows with pointer interactions.
+    253_ContextClick.spec.ts      Context-menu and right-click interaction examples.
+    Task_01_01Oct.spec.ts         Mouse and keyboard activity practice task for interactive elements.
+    Task_02_01Oct.spec.ts         End-to-end task covering login, value extraction, and assertions.
+  11_JSAlerts/
+    254_JSAlerts.spec.ts          Handling JavaScript alerts, confirm dialogs, and prompt flows.
 ```
 
 ## File purpose
@@ -141,4 +160,23 @@ tests/07_WebTables/236_WebTablePagination.spec.ts  Locates a specific record acr
 tests/07_WebTables/237_WebTablePaginationWithFunction.spec.ts  Reuses a helper function to search paginated tables and collect row details such as email and country.
 tests/07_WebTables/238_Task26OrangeHr.spec.ts  Automates an OrangeHRM employee workflow with add, verify, delete, and pagination checks on the table.
 tests/07_WebTables/239_TaskSep26Flipkart.spec.ts  Searches Flipkart products across pages and logs the product names and prices from the listing grid.
+tests/08_Dropdowns/              Includes static and custom dropdown examples, including type-ahead selection patterns.
+tests/08_Dropdowns/240_SimpleDD.spec.ts  Demonstrates simple static select-based dropdown handling.
+tests/08_Dropdowns/241_CustomDD.spec.ts  Covers custom dropdowns that use click-based selection and dynamic option lists.
+tests/08_Dropdowns/242_CustomDDType.spec.ts  Shows keyboard-driven custom dropdown interaction with typing and selection.
+tests/09_FramesIFrames/          Includes iframe, multi-frame, and nested frame navigation and interaction examples.
+tests/09_FramesIFrames/245_HandlingIFrames.spec.ts  Switches into and out of iframe contexts for isolated page actions.
+tests/09_FramesIFrames/246_MultiFrame.spec.ts  Works with multiple frames on a page and validates element interaction in each context.
+tests/09_FramesIFrames/247_NestedFrames.spec.ts  Navigates parent-child nested iframe structures and interacts with inner content.
+tests/09_FramesIFrames/248_TaskSep29.spec.ts  Applies a combined frame-handling task to interact with a real form flow.
+tests/10_MouseActionNKeyboard/   Includes hover, keyboard, drag-and-drop, context-click, and task-driven pointer examples.
+tests/10_MouseActionNKeyboard/249_Keyboard.spec.ts  Verifies keyboard input and shortcut events using page.keyboard actions.
+tests/10_MouseActionNKeyboard/250_HoverTest.spec.ts  Exercises hover state changes and pointer-driven interactions.
+tests/10_MouseActionNKeyboard/251_DragnDrop.spec.ts  Demonstrates drag-and-drop actions using simple draggable elements.
+tests/10_MouseActionNKeyboard/252_AdvDragnDrop.spec.ts  Covers advanced pointer-based drag/drop flows.
+tests/10_MouseActionNKeyboard/253_ContextClick.spec.ts  Tests right-click/context-menu behavior on interactive elements.
+tests/10_MouseActionNKeyboard/Task_01_01Oct.spec.ts  Practice task for mouse and keyboard interactions in a UI flow.
+tests/10_MouseActionNKeyboard/Task_02_01Oct.spec.ts  End-to-end task covering sign-in, value extraction, and table assertions.
+tests/11_JSAlerts/              Includes JavaScript alert, confirm, and prompt handling examples.
+tests/11_JSAlerts/254_JSAlerts.spec.ts  Covers browser dialog handling with accept, dismiss, and prompt interaction flows.
 ```

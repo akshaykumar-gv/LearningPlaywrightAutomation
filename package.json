@@ -3,7 +3,9 @@
   "version": "1.0.0",
   "description": "",
   "main": "",
-  "scripts": {},
+  "scripts": {
+    "test": "npx playwright test tests/10_MouseActionNKeyboard/Task_02_01Oct.spec.ts --headed"
+  },
   "keywords": [],
   "author": "Akshay Kumar GV",
   "license": "MIT",
