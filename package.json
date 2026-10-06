@@ -4,7 +4,7 @@
   "description": "",
   "main": "",
   "scripts": {
-    "test": "npx playwright test tests/10_MouseActionNKeyboard/Task_02_01Oct.spec.ts --headed"
+    "test": "npx playwright test tests/12_SVG/255_handleSVG.spec.ts --headed"
   },
   "keywords": [],
   "author": "Akshay Kumar GV",

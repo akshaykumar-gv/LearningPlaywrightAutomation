@@ -85,7 +85,7 @@ package-lock.json                 Locked dependency versions for reproducible in
 playwright.config.ts              Playwright configuration, browser projects, and Allure setup.
 storageStage.json                 Shared browser storage snapshot used by session-state examples.
 README.md                        Parent project documentation and quick-start instructions.
-tests/                           Learning chapters covering basics, annotations, locators, dropdowns, frames, mouse/keyboard actions, JS alerts, multiple elements, web tables, session storage, and reporting.
+tests/                           Learning chapters covering basics, annotations, locators, dropdowns, frames, mouse/keyboard actions, SVG interaction, JS alerts, multiple elements, web tables, session storage, and reporting.
   01_Basics/
     220_BCP.spec.ts              Basic browser control and page interaction examples.
     221_BCP_More.spec.ts          Additional browser flow and interaction scenarios.
@@ -135,6 +135,10 @@ tests/                           Learning chapters covering basics, annotations,
     Task_02_01Oct.spec.ts         End-to-end task covering login, value extraction, and assertions.
   11_JSAlerts/
     254_JSAlerts.spec.ts          Handling JavaScript alerts, confirm dialogs, and prompt flows.
+  12_SVG/
+    255_handleSVG.spec.ts         Clicks and extracts searchable product names from an SVG-based Flipkart toolbar.
+    256_handleAdvSVG.spec.ts      Selects SVG shapes, verifies state changes, and reads bar chart data.
+    256_handleSVGMap.spec.ts      Iterates an SVG country map and clicks interactive state regions.
 ```
 
 ## File purpose
@@ -179,4 +183,8 @@ tests/10_MouseActionNKeyboard/Task_01_01Oct.spec.ts  Practice task for mouse and
 tests/10_MouseActionNKeyboard/Task_02_01Oct.spec.ts  End-to-end task covering sign-in, value extraction, and table assertions.
 tests/11_JSAlerts/              Includes JavaScript alert, confirm, and prompt handling examples.
 tests/11_JSAlerts/254_JSAlerts.spec.ts  Covers browser dialog handling with accept, dismiss, and prompt interaction flows.
+tests/12_SVG/                  Includes SVG element interaction examples for search controls, charts, and geographic maps.
+tests/12_SVG/255_handleSVG.spec.ts  Clicks an SVG search control and prints matching product names from the results.
+tests/12_SVG/256_handleAdvSVG.spec.ts  Selects SVG shapes and chart elements while validating their state changes.
+tests/12_SVG/256_handleSVGMap.spec.ts  Iterates SVG country map paths and clicks interactive state regions.
 ```
